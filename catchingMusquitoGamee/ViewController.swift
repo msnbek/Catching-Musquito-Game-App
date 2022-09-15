@@ -1,6 +1,5 @@
 //
 //  ViewController.swift
-//  ogirdieApp
 //
 //  Created by Mahmut Şenbek on 14.09.2022.
 //
@@ -43,7 +42,7 @@ var button = true
         super.viewDidLoad()
         //Hidden Play Button
         
-        //code 
+        //code
         
         //Stored Highscore
         let storedHighscore = UserDefaults.standard.object(forKey: "highscore")
