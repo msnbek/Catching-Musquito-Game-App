@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "sticker-design-with-mosquito-cartoon-character-isolated_1308-73233-2-removebg-preview.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,24 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="catchingMusquitoGamee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ5-ja-334">
+                                <rect key="frame" x="199" y="95" width="878" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="878" id="k8F-Nu-2gu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdp-Bm-eSu">
+                                <rect key="frame" x="172" y="170" width="71" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker-design-with-mosquito-cartoon-character-isolated_1308-73233-2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="ozM-tm-8w3">
+                                <rect key="frame" x="20" y="237" width="102" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="9b6-Nv-Hoz"/>
+                                    <constraint firstAttribute="height" constant="99" id="voV-lA-1o1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sticker-design-with-mosquito-cartoon-character-isolated_1308-73233-2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="qfL-5t-ZmO">
+                                <rect key="frame" x="20" y="399" width="102" height="99"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sticker-design-with-mosquito-cartoon-character-isolated_1308-73233-2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="bh5-TN-3qu">
+                                <rect key="frame" x="156" y="399" width="102" height="99"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sticker-design-with-mosquito-cartoon-character-isolated_1308-73233-2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Zqq-nH-aF2">
+                                <rect key="frame" x="292" y="399" width="102" height="99"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sticker-design-with-mosquito-cartoon-character-isolated_1308-73233-2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="qmE-ag-BhZ">
+                                <rect key="frame" x="20" y="560" width="102" height="99"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sticker-design-with-mosquito-cartoon-character-isolated_1308-73233-2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="B4Z-ay-Vqc">
+                                <rect key="frame" x="156" y="560" width="102" height="99"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sticker-design-with-mosquito-cartoon-character-isolated_1308-73233-2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="LQp-y4-fVu">
+                                <rect key="frame" x="292" y="560" width="102" height="99"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker-design-with-mosquito-cartoon-character-isolated_1308-73233-2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="bqY-EO-CMk">
+                                <rect key="frame" x="156" y="237" width="102" height="99"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker-design-with-mosquito-cartoon-character-isolated_1308-73233-2-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="PZr-3G-bge">
+                                <rect key="frame" x="292" y="237" width="102" height="99"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgs-SJ-H7Q">
+                                <rect key="frame" x="133" y="698" width="148" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PLAY">
+                                    <backgroundConfiguration key="background" cornerRadius="19">
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WpG-AL-fyC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highscore : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEc-vI-7h9">
+                                <rect key="frame" x="143" y="774" width="148" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Oit-ym-bhY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="qmE-ag-BhZ" firstAttribute="bottom" secondItem="B4Z-ay-Vqc" secondAttribute="bottom" id="01h-Ga-Q8d"/>
+                            <constraint firstItem="bh5-TN-3qu" firstAttribute="trailing" secondItem="B4Z-ay-Vqc" secondAttribute="trailing" id="0Kv-Py-5QU"/>
+                            <constraint firstItem="ozM-tm-8w3" firstAttribute="bottom" secondItem="bqY-EO-CMk" secondAttribute="bottom" id="0hk-wz-ySc"/>
+                            <constraint firstItem="ozM-tm-8w3" firstAttribute="top" secondItem="bqY-EO-CMk" secondAttribute="top" id="1Uw-03-sKI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qmE-ag-BhZ" secondAttribute="bottom" constant="203" id="1g3-tw-pog"/>
+                            <constraint firstItem="PZr-3G-bge" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1gB-2A-KdT"/>
+                            <constraint firstItem="ozM-tm-8w3" firstAttribute="leading" secondItem="qfL-5t-ZmO" secondAttribute="leading" id="27V-le-jaw"/>
+                            <constraint firstItem="qfL-5t-ZmO" firstAttribute="top" secondItem="ozM-tm-8w3" secondAttribute="bottom" constant="63" id="3eK-Uu-p4Y"/>
+                            <constraint firstItem="bqY-EO-CMk" firstAttribute="top" secondItem="PZr-3G-bge" secondAttribute="top" id="4rA-qs-36I"/>
+                            <constraint firstItem="bh5-TN-3qu" firstAttribute="leading" secondItem="B4Z-ay-Vqc" secondAttribute="leading" id="4yl-Hl-LhN"/>
+                            <constraint firstItem="zdp-Bm-eSu" firstAttribute="centerX" secondItem="bqY-EO-CMk" secondAttribute="centerX" id="6ru-vc-ZXq"/>
+                            <constraint firstItem="bqY-EO-CMk" firstAttribute="trailing" secondItem="bh5-TN-3qu" secondAttribute="trailing" id="8XW-Aa-UXG"/>
+                            <constraint firstItem="PZr-3G-bge" firstAttribute="trailing" secondItem="Zqq-nH-aF2" secondAttribute="trailing" id="AFz-a5-jf0"/>
+                            <constraint firstItem="B4Z-ay-Vqc" firstAttribute="centerX" secondItem="Qgs-SJ-H7Q" secondAttribute="centerX" id="Csh-1c-G17"/>
+                            <constraint firstItem="qfL-5t-ZmO" firstAttribute="bottom" secondItem="bh5-TN-3qu" secondAttribute="bottom" id="Epf-fP-ltI"/>
+                            <constraint firstItem="qmE-ag-BhZ" firstAttribute="top" secondItem="B4Z-ay-Vqc" secondAttribute="top" id="Ggh-aS-B1m"/>
+                            <constraint firstItem="bqY-EO-CMk" firstAttribute="leading" secondItem="ozM-tm-8w3" secondAttribute="trailing" constant="34" id="Hnc-5f-fJK"/>
+                            <constraint firstItem="B4Z-ay-Vqc" firstAttribute="bottom" secondItem="LQp-y4-fVu" secondAttribute="bottom" id="MCj-ds-zij"/>
+                            <constraint firstItem="qfL-5t-ZmO" firstAttribute="top" secondItem="bh5-TN-3qu" secondAttribute="top" id="MgI-z2-pBw"/>
+                            <constraint firstItem="ozM-tm-8w3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="193" id="N0t-mq-3Vf"/>
+                            <constraint firstItem="Zqq-nH-aF2" firstAttribute="trailing" secondItem="LQp-y4-fVu" secondAttribute="trailing" id="Pxw-w2-xrJ"/>
+                            <constraint firstItem="Qgs-SJ-H7Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="Twf-0X-5EB"/>
+                            <constraint firstItem="bh5-TN-3qu" firstAttribute="bottom" secondItem="Zqq-nH-aF2" secondAttribute="bottom" id="TyT-rO-1xK"/>
+                            <constraint firstItem="ozM-tm-8w3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="U0f-MD-FBz"/>
+                            <constraint firstItem="zdp-Bm-eSu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="Uz1-fX-v6w"/>
+                            <constraint firstItem="bqY-EO-CMk" firstAttribute="leading" secondItem="bh5-TN-3qu" secondAttribute="leading" id="VeG-QJ-nJ2"/>
+                            <constraint firstItem="ozM-tm-8w3" firstAttribute="trailing" secondItem="qfL-5t-ZmO" secondAttribute="trailing" id="Wfh-qY-VsF"/>
+                            <constraint firstItem="eEc-vI-7h9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="bjc-oX-8xO"/>
+                            <constraint firstItem="PZr-3G-bge" firstAttribute="leading" secondItem="bqY-EO-CMk" secondAttribute="trailing" constant="34" id="doQ-bw-T25"/>
+                            <constraint firstItem="Qgs-SJ-H7Q" firstAttribute="top" secondItem="B4Z-ay-Vqc" secondAttribute="bottom" constant="39" id="e1Z-cj-FiM"/>
+                            <constraint firstItem="PZr-3G-bge" firstAttribute="leading" secondItem="Zqq-nH-aF2" secondAttribute="leading" id="ezU-0o-GSt"/>
+                            <constraint firstItem="qfL-5t-ZmO" firstAttribute="trailing" secondItem="qmE-ag-BhZ" secondAttribute="trailing" id="fJQ-AN-dVn"/>
+                            <constraint firstItem="qfL-5t-ZmO" firstAttribute="leading" secondItem="qmE-ag-BhZ" secondAttribute="leading" id="fTz-ho-9nF"/>
+                            <constraint firstItem="bh5-TN-3qu" firstAttribute="top" secondItem="Zqq-nH-aF2" secondAttribute="top" id="hrb-41-Fkj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eEc-vI-7h9" secondAttribute="bottom" constant="53" id="hwB-Jq-fvg"/>
+                            <constraint firstItem="qmE-ag-BhZ" firstAttribute="top" secondItem="qfL-5t-ZmO" secondAttribute="bottom" constant="62" id="j1F-3B-ft1"/>
+                            <constraint firstItem="Zqq-nH-aF2" firstAttribute="leading" secondItem="LQp-y4-fVu" secondAttribute="leading" id="j5k-ZZ-Gqz"/>
+                            <constraint firstItem="eEc-vI-7h9" firstAttribute="top" secondItem="Qgs-SJ-H7Q" secondAttribute="bottom" constant="32" id="lbp-Ow-dNX"/>
+                            <constraint firstItem="bqY-EO-CMk" firstAttribute="bottom" secondItem="PZr-3G-bge" secondAttribute="bottom" id="nKg-qu-Mzx"/>
+                            <constraint firstItem="B4Z-ay-Vqc" firstAttribute="top" secondItem="LQp-y4-fVu" secondAttribute="top" id="oT6-vN-PmP"/>
+                            <constraint firstItem="qfL-5t-ZmO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qh6-fz-qQh"/>
+                            <constraint firstItem="CQ5-ja-334" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="199" id="tZb-1a-rZu"/>
+                            <constraint firstItem="CQ5-ja-334" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="uDY-M3-nBJ"/>
+                            <constraint firstItem="zdp-Bm-eSu" firstAttribute="top" secondItem="CQ5-ja-334" secondAttribute="bottom" constant="36" id="vo1-Vg-COh"/>
+                            <constraint firstItem="zdp-Bm-eSu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y6p-Ja-VeL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelHighscoreText" destination="eEc-vI-7h9" id="al4-uv-qAo"/>
+                        <outlet property="labelScoreText" destination="zdp-Bm-eSu" id="Ap5-Ke-Nfm"/>
+                        <outlet property="labelTimeText" destination="CQ5-ja-334" id="oaA-FM-g2N"/>
+                        <outlet property="mosquito1" destination="ozM-tm-8w3" id="C2S-k9-sDr"/>
+                        <outlet property="mosquito2" destination="bqY-EO-CMk" id="FvO-oF-ChH"/>
+                        <outlet property="mosquito3" destination="PZr-3G-bge" id="2Bh-EJ-B6o"/>
+                        <outlet property="mosquito4" destination="qfL-5t-ZmO" id="ASh-ff-1IS"/>
+                        <outlet property="mosquito5" destination="bh5-TN-3qu" id="ffn-Pk-Dwh"/>
+                        <outlet property="mosquito6" destination="Zqq-nH-aF2" id="xX8-5w-0AJ"/>
+                        <outlet property="mosquito7" destination="qmE-ag-BhZ" id="0AP-gE-NWb"/>
+                        <outlet property="mosquito8" destination="B4Z-ay-Vqc" id="gkM-gd-1rU"/>
+                        <outlet property="mosquito9" destination="LQp-y4-fVu" id="Ym4-3y-Fv0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sticker-design-with-mosquito-cartoon-character-isolated_1308-73233-2-removebg-preview" width="629" height="397"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
