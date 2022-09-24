@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var labelScoreText: UILabel!
     
+    @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var mosquito1: UIImageView!
     @IBOutlet weak var mosquito2: UIImageView!
     @IBOutlet weak var mosquito3: UIImageView!
@@ -30,6 +31,8 @@ class ViewController: UIViewController {
     
     var hiddenTimer = Timer()
     
+    var hiddenPlayButton = true
+    
     var counter = 0
     
     var highScore = 0
@@ -41,7 +44,7 @@ var button = true
     override func viewDidLoad() {
         super.viewDidLoad()
         //Hidden Play Button
-        
+        playButton.isHidden = true
         //code
         
         //Stored Highscore
@@ -97,13 +100,18 @@ var button = true
         
     hiddenMosquito()
 
-        
-        
-        
+      
     }
-    
-    
-    @IBAction func playButton(_ sender: UIButton) {
+    //After Press "OK" Play Function
+    @IBAction func playButtonAction(_ sender: Any) {
+   
+        self.score = 0
+        self.labelScoreText.text = " Score: \(self.score)"
+        self.counter = 10
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.remainingTime), userInfo: nil, repeats: true)
+        self.labelTimeText.text = "\(self.counter)"
+        hiddenTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.hiddenMosquito), userInfo: nil, repeats: true)
+       
     }
     
     
@@ -124,7 +132,10 @@ var button = true
         if counter == 0 {
             let alert = UIAlertController(title: "Time's over!", message: "Let's try again!", preferredStyle: UIAlertController.Style.alert)
             self.present(alert, animated: true)
-            let button = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+            let button = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { [self] (UIAlertAction) in
+                playButton.isHidden = false
+                
+            }
             alert.addAction(button)
             let replayButton = UIAlertAction(title: "Replay", style: UIAlertAction.Style.default) { [self]
                 (UIAlertAction) in
